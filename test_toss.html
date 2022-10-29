@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/test.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #container{
+            display: grid;
+            grid-template: 59px 870px / 1fr ;
+        }
+
+        #header{
+            display: grid;
+            grid-template: 1fr / 40px 80px 1fr 3fr 1fr;
+        }
+
+        #links{
+            display: grid;
+            grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr ;
+        }
+
+        #ktoe{
+            display: grid;
+            grid-template-columns: 1fr 10px 1fr;
+            align-content: center;
+        }
+
+        #landing{
+            display: grid;
+            grid-template-rows: 80px 300px 100px 1fr;
+            background: url("./image/back.jpg");
+            /* background-color: rgba(100, 100, 100, 0.2); */
+        }
+
+        #app_buttons{
+            grid-template-columns: 1fr 180px 20px 180px 1fr;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div></div>
+            <div style="align-content: center;">
+                <i class="fa fa-cloud" style="font-size:24px;color:blue;">
+                    <strong style="color:black;">toss</strong>
+                </i>
+            </div>
+            <div></div>
+            <div id="links">
+                <button type="button" class="btn">회사 소개</button>
+                <button type="button" class="btn">고객센터</button>
+                <button type="button" class="btn">자주 묻는 질문</button>
+                <button type="button" class="btn">토스인증서</button>
+                <button type="button" class="btn">채용</button>
+            </div>
+            <div id="ktoe">
+                <span style="justify-self:end;">KOR</span>
+                <span style="padding-left:10px;">|</span>
+                <span style="padding-left:10px;">ENG</span>
+            </div>
+        </div>
+        <div id="landing">
+            <div></div>
+            <div style="font-size: 55px; align-content: center;">
+                <div style="justify-self:center;""><strong>금융의 모든 것</strong></div>
+                <div style="justify-self:center;""><strong>토스에서 쉽고 간편하게</strong></div>
+            </div>
+            <div id="app_buttons">
+                <div></div>
+                <button type="button" class="btn btn-dark" style="width: 170px; height: 50px">
+                    <div style="display: block;">
+                        <i class="fa fa-apple" aria-hidden="true"></i>
+                        <strong>App Store</strong>
+                    </div>
+                </button>
+                <div></div>
+                <button type="button" class="btn btn-dark" style="width: 170px; height: 50px">
+                    <div style="display: block;">
+                        <i class="fa fa-android" aria-hidden="true"></i>
+                        <strong>Google Play</strong>
+                    </div>
+                </button>
+                <div></div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
